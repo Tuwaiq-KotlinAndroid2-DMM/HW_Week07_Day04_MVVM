@@ -1,0 +1,23 @@
+package com.example.w7d4_mvvm.view.splash
+
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.os.Handler
+import com.example.w7d4_mvvm.R
+import com.example.w7d4_mvvm.databinding.ActivitySplashBinding
+import com.example.w7d4_mvvm.view.login.LoginActivity
+
+class SplashActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        val binding = ActivitySplashBinding.inflate(layoutInflater)
+
+        Handler().postDelayed({
+            startActivity(Intent(this, LoginActivity::class.java))
+        },3000)
+
+        setContentView(binding.root)
+    }
+}
