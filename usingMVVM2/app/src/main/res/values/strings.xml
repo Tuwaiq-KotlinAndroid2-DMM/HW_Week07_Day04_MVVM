@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">usingMVVM</string>
+    <string name="textview">TextView</string>
+    <string name="textviewusername">TextView</string>
+</resources>
